@@ -3,12 +3,12 @@ Watchtower for Etherlink Bridge withdrawal operations
 
 ## Local Setup
 ### Prerequisites
-- Install [Poetry](https://python-poetry.org/docs/#installation) if not already installed.
+- Install [uv](https://docs.astral.sh/uv/getting-started/installation/) if not already installed.
 
 ### Installation
 1. Install dependencies:
 ```bash
-poetry install
+make install
 ```
 
 2. Copy and configure environment variables:
@@ -30,5 +30,5 @@ docker build -t etherlink-watchtower .
 
 ### Run Docker Container
 ```bash
-docker run -d --name watchtower --env-file .env.dist etherlink-watchtower
+docker run -d --name watchtower --env-file .env etherlink-watchtower
 ```

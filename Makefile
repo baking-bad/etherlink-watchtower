@@ -3,7 +3,7 @@
 
 py := uv run
 
-source_dir := .
+source_dir := src
 
 
 install:
